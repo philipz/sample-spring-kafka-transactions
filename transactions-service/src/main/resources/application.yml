@@ -1,7 +1,7 @@
 spring:
   application.name: transactions-service
   kafka:
-    bootstrap-servers: inviting-camel-5620-eu1-kafka.upstash.io:9092
+    bootstrap-servers: inviting-worm-8435-eu1-kafka.upstash.io:9092
     properties:
       security.protocol: SASL_SSL
       sasl.mechanism: SCRAM-SHA-256

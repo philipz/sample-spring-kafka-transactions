@@ -1,11 +1,11 @@
 spring:
   application.name: accounts-service
   kafka:
-    bootstrap-servers: inviting-camel-5620-eu1-kafka.upstash.io:9092
+    bootstrap-servers: inviting-worm-8435-eu1-kafka.upstash.io:9092
     properties:
       security.protocol: SASL_SSL
       sasl.mechanism: SCRAM-SHA-256
-      sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="${KAFKA_USER}" password="${KAFKA_PASS};
+      sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="${KAFKA_USER}" password="${KAFKA_PASS}";
     consumer:
       key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
